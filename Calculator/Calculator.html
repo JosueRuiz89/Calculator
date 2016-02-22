@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./CSS/Calculator.css" />
+    <script type="text/javascript" src="./Scripts/Calculator.js"></script>
+</head>
+<body>
+    <h4>Calculator</h4>
+    <div id="container" class="container">
+        <div class="topZone">
+            <input type="text" id="expression" onkeypress="calculator.onKeyPress(event)" />
+            <input type="button" id="calculate" value="calculate" onclick="calculator.onCalculate()" />
+        </div>
+        <div class="bottomZone">
+            <div id="resultMessage" class="result"></div>
+            <div id="errorMessage" class="error"></div>
+            <input type="hidden" id="exception" />
+        </div>
+    </div>
+    <div class="exampleContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Operation
+                    </th>
+                    <th>
+                        Example
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adition</td>
+                    <td> Input: 1+1 = 2</td>
+                </tr>
+                <tr>
+                    <td>Substraction</td>
+                    <td>Input: 3-2 = 1</td>
+                </tr>
+                <tr>
+                    <td>Division</td>
+                    <td>Input: 10/2 = 5</td>
+                </tr>
+                <tr>
+                    <td>Multiplication</td>
+                    <td> Input: 5*2 = 10</td>
+                </tr>
+                <tr>
+                    <td>Square root</td>
+                    <td>Input: sqrt(4) = 2</td>
+                </tr>
+                <tr>
+                    <td>Exponents(Power of)</td>
+                    <td>Input: 2^3 = 8</td>
+                </tr>
+                <tr>
+                    <td>You can mix</td>
+                    <td>Input: 40+5-6*sqrt(16) = 21</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

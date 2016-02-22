@@ -1,0 +1,28 @@
+﻿.container, .exampleContainer {
+    border:1px solid #ccc;
+    box-sizing:content-box;
+    padding:5px;
+    float:left;
+    margin-right:15px;
+}
+
+.container {
+    width: 250px;
+}
+
+.exampleContainer {
+    width:350px;
+}
+
+.exampleContainer table th {
+    text-align:left;
+}
+
+.topZone {
+    margin-bottom: 15px;
+}
+
+
+.error {
+    color: #ff0000;
+}
